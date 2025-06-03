@@ -107,7 +107,7 @@ public class FilePickerPlugin extends CordovaPlugin {
                 this.cordova.requestPermission(this, 0, Manifest.permission.WRITE_EXTERNAL_STORAGE);
             } else {
                 this.selectFiles();
-
+            }
             if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                 // Android API 33 and higher
                 if (!this.cordova.hasPermission(Manifest.permission.READ_MEDIA_IMAGES) && !this.cordova.hasPermission(Manifest.permission.READ_MEDIA_VIDEO)) {
